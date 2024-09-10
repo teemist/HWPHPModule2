@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div>
+{% for pic in pics %}
+<a href="index.php?pic={{ pic }}">
+    <img src="../img/small/{{ pic }}" alt="{{ pic }}" width='300'>
+</a>
+{% endfor %}
+</div>
+</body>
+</html>
